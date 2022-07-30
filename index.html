@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor.io</title>
+    <link rel="stylesheet" href="front.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="img/fa.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="menu-internal">
+               <img src="img/logooficial.png" alt="">
+            </div>
+        </div>
+    </header>
+    <section class="main-section">
+        <div class="card">
+            <div class="up-card">
+                <label>Quero converter:</label>
+                <input id="input" type="number">
+                <select onchange="ValueOption1()" name="select1" id="select-geral1">
+                    <optgroup label="Métrico">
+                        <option value="(km)">Quilômetro (km)</option>
+                        <option value="(m)">Metro (m)</option>
+                        <option value="(dm)">Decímetro (dm)</option>
+                        <option value="(cm)">Centímetro (cm)</option>
+                        <option value="(mm)">Milímetro (mm)</option>
+                        <option value="(μm)">Micrômetro (μm)</option>
+                    </optgroup>
+                </select>
+                <label>Para:</label>
+                <select onchange="ValueOption2()" name="select2" id="select-geral2">
+                    <optgroup label="Métrico">
+                        <option value="(km)">Quilômetro (km)</option>
+                        <option value="(m)">Metro (m)</option>
+                        <option value="(dm)">Decímetro (dm)</option>
+                        <option value="(cm)">Centímetro (cm)</option>
+                        <option value="(mm)">Milímetro (mm)</option>
+                        <option value="(μm)">Micrômetro (μm)</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="divresultado">
+                <div class="resultado">
+                    <p id="res"></p>
+                </div>
+            </div>
+            <div class="down-card">
+                <button onclick="converter()" class="btn"><i class="material-symbols-outlined">Sync</i></button>
+                <button onclick="resetar()" id="btn2"class="btn"><i class="material-symbols-outlined">Restart_alt</i></button>
+            </div>
+        </div>
+    </section>
+    <div class="créditos">
+        <p>&copy;Defire</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
